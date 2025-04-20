@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbearia</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+    <fieldset>
+        <legend>
+            <h1><b>Agendamento</b></h1>
+        </legend>
+        <form action="db_insert.php" method="post">
+            <input type="text" name="cliente" placeholder="Cliente" required><br><br>
+            <input type="tel" name="telefone" placeholder="Telefone" required><br><br>
+            <select name="funcionarias" required>
+                <option value="" disabled selected>Selecione Funcionaria </option>
+                <option value="funcionaria1">funcionaria1</option>
+                <option value="funcionaria2">funcionaria2</option>
+                <option value="funcionaria3">funcionaria3</option>
+                </select><br><br>
+            <input type="date" name="data_agendamento" placeholder="agendar" required><br><br>
+            <select name="hora_agendamento" required>
+                <option value="" disabled selected>Selecionar Horário</option>
+                <option value="08:00:00">08:00</option>
+                <option value="08:30:00">08:30</option>
+                <option value="09:00:00">09:00</option>
+                <option value="09:30:00">09:30</option>
+                <option value="10:00:00">10:00</option>
+                <option value="10:30:00">10:30</option>
+                <option value="11:00:00">11:00</option>
+                <option value="11:30:00">11:30</option>
+                <option value="12:00:00">12:00</option>
+                <option value="12:30:00">12:30</option>
+                <option value="13:00:00">13:00</option>
+                <option value="13:30:00">13:30</option>
+                <option value="14:00:00">14:00</option>
+                <option value="14:30:00">14:30</option>
+                <option value="15:00:00">15:00</option>
+                <option value="15:30:00">15:30</option>
+                <option value="16:00:00">16:00</option>
+                <option value="16:30:00">16:30</option>
+                <option value="17:00:00">17:00</option>
+                <option value="17:30:00">17:30</option>
+            </select><br><br>
+
+            <select name="forma_De_pagamento" required>
+                <option value="" disabled selected>Selecionar tipo de Pagamento </option>
+                <option value="dinheiro">Dinheiro</option>
+                <option value="cartao">Cartão</option>
+                <option value="pix">Pix </option>
+                </select>
+            <br><br>
+            
+            <input type="submit" value="Agendar"> 
+        </form>
+    </fieldset>
+</body>
+</html>
